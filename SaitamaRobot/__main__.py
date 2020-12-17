@@ -51,25 +51,25 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hello {},My Name is IGRIS
+Hello {},My Name is yukine 
 
 I am an 𝐴𝑛𝑖𝑚𝑒 Themed Group Managing Bot and I will help in managing your group
 
-⚡ I have the normal GROUP MANAGING functions like flood control, a warning system etc but I mainly have the advanced and handy Antispam system  which safegaurds and helps your group from spammers 
-⚡ If u want a healthy and safe group you can add me to help take care of it
-⚡ Hit /help to see my commands
+ ✔I have the normal GROUP MANAGING functions like flood control, a warning system etc but I mainly have the advanced and handy Antispam system  which safegaurds and helps your group from spammers 
+✔ If u want a healthy and safe group you can add me to help take care of it
+ ✔Hit /help to see my commands
 ==========================
-🔗 [ Support Group ](https://t.me/IGRISBOTSUPPORT) 
+🔗 [ Support ](https://t.me/bishamonsupport) 
 ==========================
 """
 
 HELP_STRINGS = """
 Hey there! My name is *{}*.
-I'm a Shadow From Solo Leveling,I will help you manage your groups! Have a look at the following for an idea of some of \
+I'm a shikigami from noragami ,I will help you manage your groups! Have a look at the following for an idea of some of \
 the things I can help you with.
 
 *Main* commands available:
- • /help: PM's you this message.
+ • !help: PM's you this message.
  • /help <module name>: PM's you info about that module.
  • /donate: information on how to donate!
  • /settings:
@@ -83,7 +83,7 @@ And the following:
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-SAITAMA_IMG = "https://telegra.ph/file/9e33d2725f5a949875165.jpg"
+SAITAMA_IMG = "https://telegra.ph/file/01ae08acd9ff5b6177a93.jpg"
 
 DONATE_STRING = """donate to the original writer of the Base code, Paul
 There are two ways of supporting him; [PayPal](paypal.me/PaulSonOfLars), or [Monzo](monzo.me/paulnionvestergaardlarsen)."""
@@ -193,13 +193,13 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(
                     [[
                         InlineKeyboardButton(
-                            text="🔥Add IGRIS To Your Group🔥",
+                            text="🔥Add yukine To Your Group🔥",
                             url="t.me/{}?startgroup=true".format(
                                 context.bot.username))
                      ]]))
     else:
         update.effective_message.reply_text(
-            "I'm online!\n<b>Up since:</b> <code>{}</code>".format(uptime),
+            "yare yare stop bugging me !\n<b>Up since:</b> <code>{}</code>".format(uptime),
             parse_mode=ParseMode.HTML)
 
 
@@ -480,7 +480,7 @@ def donate(update: Update, context: CallbackContext):
                 "I've PM'ed you about donating to my creator!")
         except Unauthorized:
             update.effective_message.reply_text(
-                "Contact me in PM first to get donation information.")
+                "Contact me in PM first to get donation information or just let me stab you with a sword and bleed out .")
 
 
 def migrate_chats(update: Update, context: CallbackContext):
